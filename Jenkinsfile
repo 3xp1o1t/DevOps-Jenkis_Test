@@ -3,7 +3,17 @@ pipeline {
   stages {
     stage("clone") {
       steps {
-        echo "this is a change"
+        echo "this is a changed message"
+      }
+    }
+    stage("build") {
+      steps {
+        echo "this is a build stage"
+      }
+    }
+    stage("deploy") {
+      steps {
+        echo "this is a deploy stage"
       }
     }
   }
